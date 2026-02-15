@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Memorial Profile V2 - The Online Graveyard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3b19e6",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#141121",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar hide for cleaner look */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        .ethereal-gradient {
+            background: radial-gradient(circle at 50% 0%, rgba(59, 25, 230, 0.15) 0%, rgba(20, 17, 33, 0) 70%);
+        }
+        
+        .candle-glow {
+            filter: drop-shadow(0 0 8px rgba(255, 165, 0, 0.6));
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 font-display min-h-screen relative overflow-x-hidden antialiased selection:bg-primary/30">
+<!-- Ethereal Background Effect -->
+<div class="fixed inset-0 pointer-events-none z-0 ethereal-gradient"></div>
+<!-- Sticky Header -->
+<header class="sticky top-0 z-50 backdrop-blur-md bg-background-light/80 dark:bg-background-dark/80 border-b border-primary/5 dark:border-white/5 transition-all duration-300">
+<div class="max-w-md mx-auto px-4 h-16 flex items-center justify-between">
+<button class="p-2 -ml-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
+<span class="material-icons text-slate-600 dark:text-slate-300">arrow_back</span>
+</button>
+<div class="text-center opacity-0 transition-opacity duration-300" id="header-title">
+<h2 class="text-sm font-semibold tracking-wide">Eleanor Rigby</h2>
+</div>
+<button class="p-2 -mr-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
+<span class="material-icons text-slate-600 dark:text-slate-300">ios_share</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="relative z-10 max-w-md mx-auto pb-24">
+<!-- Hero Section: Name & Dates -->
+<div class="px-6 pt-8 pb-6 text-center">
+<div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-2 border-primary/20 shadow-lg relative">
+<img alt="Portrait of Eleanor Rigby smiling gently" class="w-full h-full object-cover" data-alt="Portrait of Eleanor Rigby smiling gently" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEdcnp1WyqwB2WJTdLNg7UOdD8GGwIhkc6nsoLux4KEzszztCcLNPjf0Hiw2XbXnFdhakEB8SdMx3vG122ZkXHYm-kieMRsUsdK0-ZkkJipcrEGg-yzuZsPU_nssufxezmrDXr6OMXHAA6djJkNxfXsI7QeuJjA20iS-OagDSqYJJ4M06p-oauwZKAMipm3R18e5pjsnGNpi5HaMNpmoEvvpr6Jw9bJFL2ao8gwiEJ-bkguObnYfS4oLG8HaR01m1UXQum5anGEg"/>
+</div>
+<h1 class="text-3xl font-medium text-slate-900 dark:text-white mb-1">Eleanor Rigby</h1>
+<p class="text-primary/80 dark:text-primary/60 italic text-lg">1940 — 2023</p>
+</div>
+<!-- Tribute Video Card -->
+<div class="px-4 mb-10">
+<div class="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl shadow-primary/20 group cursor-pointer bg-black/40">
+<img alt="Mist rolling over a serene mountain lake at dawn" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="Mist rolling over a serene mountain lake at dawn" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTIGWA10RPmzVgQGis_CsOaSm6wIyDEXGp_CYGXS1DmNecmeTv9m7iEnrzo4IyftsNJcSQPCLTbeOCM8GroUYttg0htZUy51eDl1GjDYVCsp3ODFF7uawxqcraeTkWkrRyhWIMpO9v3hLIk5Jc7RqNeSfxp547CS9vhJLLjiJKVmd6TbietdZZkTj978Mf7wFsHvwuh-ZDXLBlM7AagVMzuXLSWaWyXQN3IMwY-0-AUv2HbIjDqbiuDE7pk0ZATHg5HW2K8LAtNw"/>
+<div class="absolute inset-0 flex items-center justify-center bg-black/20">
+<div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30 transition-transform group-hover:scale-110">
+<span class="material-icons text-white text-4xl pl-1">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+<p class="text-white text-sm font-medium tracking-wide">A Celebration of Life</p>
+<p class="text-white/60 text-xs">4:23 • Watch Video</p>
+</div>
+</div>
+</div>
+<!-- Biography / Written Tribute -->
+<section class="px-8 mb-12">
+<div class="flex items-center justify-center mb-6">
+<div class="h-px bg-slate-300 dark:bg-slate-700 w-12"></div>
+<span class="mx-4 text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400">In Loving Memory</span>
+<div class="h-px bg-slate-300 dark:bg-slate-700 w-12"></div>
+</div>
+<article class="prose prose-slate dark:prose-invert prose-lg font-display leading-relaxed text-slate-600 dark:text-slate-300">
+<p>
+                    Eleanor was a beacon of gentle light in a world that often felt too loud. She spent her days tending to the quiet corners of her garden and the even quieter corners of people's hearts.
+                </p>
+<p>
+                    Born in the misty hills of Yorkshire, she carried the resilience of the moors with her wherever she went. Her laughter was soft, like wind chimes in a summer breeze, and her advice was always sparse but profound. She taught us that silence isn't empty; it's full of answers if you listen closely enough.
+                </p>
+<p>
+                    She is survived by her three children, five grandchildren, and a legacy of kindness that will outlive us all.
+                </p>
+</article>
+</section>
+<!-- Memory Gallery -->
+<section class="px-4 mb-12">
+<div class="flex items-center justify-between mb-4 px-2">
+<h3 class="text-xl font-medium text-slate-900 dark:text-white">Cherished Moments</h3>
+<button class="text-sm text-primary hover:text-primary/80 transition-colors">View All</button>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<!-- Image 1 (Tall) -->
+<div class="relative group rounded-lg overflow-hidden aspect-[3/4] shadow-md hover:shadow-lg transition-shadow">
+<img alt="Vintage photo of a woman laughing in a garden" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Vintage photo of a woman laughing in a garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjrskE7ndEDDPz7NT53I2IKUiCl0rikXCuDnmjMSwrg4zNqGpSseTFDlLnFMYKUXQTnED2BhPwIggj1O8rG_QOFf5xBG3w7NKWlgs8ZiEVl7W7gp1sVric5A9Z78hGX7VX-t82qTUnC8wZKUmGgPKh2X7OUi94wxb8NrxKxf-BQJZztnkqa9DHIPwow_428QEC3fkbIqATCvgE9b7WZbovkcfdMI6hPWiUVLvIWeJ6mEDkPDp0tCKu19_NOxnrZxkP2f8SrTMjcw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-3">
+<span class="text-white text-xs">1965, The Garden</span>
+</div>
+</div>
+<!-- Image 2 (Square) -->
+<div class="relative group rounded-lg overflow-hidden aspect-square shadow-md hover:shadow-lg transition-shadow">
+<img alt="Hands holding a bouquet of wildflowers" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Hands holding a bouquet of wildflowers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx6P70Gft7HMZax9L3s4LWBuYiuO-qPHdOcCtVQ4uce3F7SYiOtSKUNiNnkkOdbb-mmGHWoQHz7NOw-grr46VtASIU5UbSVH_n9DDfcEyUnqRGoar45V8HZ_29IQEAwabyIEL8hRJB9DZ_QyyLuqioAQN5UoJU3o6xt5XNsqbegdgYwq-MUhe9T0AlH0bJZZSusYKDjh_YsxVXTKmmWDQiTKTSJzOmpCuYXqTZiqw6QxMUrW9LL9b2Gj8ub8VsutsvrRbgK2tf9Q"/>
+</div>
+<!-- Image 3 (Square) -->
+<div class="relative group rounded-lg overflow-hidden aspect-square shadow-md hover:shadow-lg transition-shadow">
+<img alt="Group of friends smiling at a picnic" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Group of friends smiling at a picnic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfqsIZsn1A3aOdY36S7PqqFZb6Tr9lqcZivNHgsL9OUdbt59KuaNT5SnbUK7LPRe1h3aCnEJXfQRBD7swHOb3J8Q0jluqTQzgOBLXT9gagN6VO1hk_0DtP5_UsfaUuobHK9lcsXANDtn2L5GwHj0cF6rq7sf4QmU4AlvPDiD-08b8_zDFB40t4201K4Z88NZe5y9PZFXI1fE1TLj08VM08hUpEiMc1CTltzA78q2NVs4dWS7Ovf2AEjnjvySA9PqtXgFRSsDcyPQ"/>
+</div>
+<!-- Image 4 (Tall) -->
+<div class="relative group rounded-lg overflow-hidden aspect-[3/4] shadow-md hover:shadow-lg transition-shadow">
+<img alt="A peaceful sunset over the ocean" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A peaceful sunset over the ocean" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXe9EJKzsFMcXcRqS2s_AGd_VHAyJHqRnkg5LAD27ckWgktI7mCfiePxbN_2Cz7vI_7xEvP2IVv9qeIYFjk8q6B0XGUYPS7BD5Um_QMU_tQ7vcOyFaSyf5rwRAvySbZb2JNSVkNbwYJlpBJjH3Ei2wHGLCkKfiiJ47pFbRAkPWrkZGX1ZqtvZREdBmJd-remT7Ou-aQslqQwYlR7t5xeq5QRd5onJBk5kfxJ07y9uAEyNEaoiuRVftKfcYC83pce-itRVZDtokJg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-3">
+<span class="text-white text-xs">Favorite Place</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Shared Tributes Section -->
+<section class="px-4 mb-8">
+<h3 class="text-xl font-medium text-slate-900 dark:text-white mb-6 px-2">Community Tributes</h3>
+<!-- Tribute Card 1 -->
+<div class="bg-white dark:bg-white/5 backdrop-blur-sm rounded-xl p-5 mb-4 shadow-sm border border-slate-100 dark:border-white/5">
+<div class="flex justify-between items-start mb-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
+<img alt="Profile picture of Sarah M." class="w-full h-full object-cover" data-alt="Profile picture of Sarah M." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCQPV1sww7troJIw_fIITjGo4loyzG_jB51t914gWGTe76DB8g8TlNM4E1CS0w61w6Ajq_BhucHvbmIMpEHV6mFa1PFepCrOD2JTNMOYsyos0AVzLzzYXlheFI8gOatr78UjCcA6ETqZUZYtnMdwSg18Lz1hBAKiU5ggaqX7pekQZzcmhlfke1BS0Zx8FVWFAKVQ5yNMt8aYaSFKUfX9xF392EmlUWs0d88OJdegtkUY0aXpUpcG73DGUFjvKTn7S9Za3Ae1N4hA"/>
+</div>
+<div>
+<p class="text-sm font-semibold text-slate-900 dark:text-white">Sarah M.</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">2 days ago</p>
+</div>
+</div>
+</div>
+<p class="text-slate-700 dark:text-slate-300 text-base leading-relaxed mb-4">
+                    Eleanor always knew exactly what to say when I was down. I will miss our Sunday teas more than words can say. Rest in peace, dear friend.
+                </p>
+<div class="flex items-center justify-end border-t border-slate-100 dark:border-white/5 pt-3">
+<button class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors group">
+<span class="material-icons text-lg text-primary/40 group-hover:text-amber-400 transition-colors">wb_sunny</span>
+<span class="text-xs font-medium text-primary">Light a Candle (12)</span>
+</button>
+</div>
+</div>
+<!-- Tribute Card 2 -->
+<div class="bg-white dark:bg-white/5 backdrop-blur-sm rounded-xl p-5 mb-4 shadow-sm border border-slate-100 dark:border-white/5">
+<div class="flex justify-between items-start mb-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden flex items-center justify-center text-slate-500">
+<span class="text-xs font-bold">JD</span>
+</div>
+<div>
+<p class="text-sm font-semibold text-slate-900 dark:text-white">John Doe</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">1 week ago</p>
+</div>
+</div>
+</div>
+<p class="text-slate-700 dark:text-slate-300 text-base leading-relaxed mb-4">
+                    A truly remarkable soul. The garden won't be the same without you.
+                </p>
+<div class="flex items-center justify-end border-t border-slate-100 dark:border-white/5 pt-3">
+<button class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 transition-colors group">
+<span class="material-icons text-lg text-amber-500 candle-glow">wb_sunny</span>
+<span class="text-xs font-medium text-amber-500">Candle Lit (4)</span>
+</button>
+</div>
+</div>
+<button class="w-full py-4 text-center text-sm text-slate-500 dark:text-slate-400 hover:text-primary transition-colors">
+                View all 42 tributes
+            </button>
+</section>
+</main>
+<!-- Floating Action Button Area -->
+<div class="fixed bottom-6 left-0 right-0 flex justify-center z-40 pointer-events-none">
+<button class="pointer-events-auto bg-primary text-white shadow-lg shadow-primary/40 px-6 py-3 rounded-full flex items-center gap-2 transform transition hover:scale-105 active:scale-95">
+<span class="material-icons text-xl">edit</span>
+<span class="font-medium tracking-wide text-sm">Write Tribute</span>
+</button>
+</div>
+</body></html>

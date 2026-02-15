@@ -1,0 +1,32 @@
+﻿Analyzing Online-graveyard...                                   
+
+   info - Dangling library doc comment - lib\core\constants\app_constants.dart:1:1 - dangling_library_doc_comments
+   info - Dangling library doc comment - lib\core\errors\exceptions.dart:1:1 - dangling_library_doc_comments
+   info - The type parameter name 'Type' matches a visible type name - lib\core\usecases\usecase.dart:18:24 - avoid_types_as_parameter_names
+   info - Dangling library doc comment - lib\core\utils\app_utils.dart:1:1 - dangling_library_doc_comments
+warning - Unused import: 'package:online_graveyard/features/home/domain/entities/memorial.dart' - lib\features\home\presentation\pages\home_page.dart:3:8 - unused_import
+warning - Unused import: 'package:online_graveyard/features/home/domain/entities/tribute.dart' - lib\features\home\presentation\pages\memorial_profile_page.dart:4:8 - unused_import
+   info - Use 'const' with the constructor to improve performance - lib\theme\app_theme.dart:66:16 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\theme\app_theme.dart:67:15 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\theme\app_theme.dart:68:18 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\theme\app_theme.dart:138:16 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\theme\app_theme.dart:139:15 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\theme\app_theme.dart:139:33 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\theme\app_theme.dart:140:18 - prefer_const_constructors
+
+flutter : 13 issues found. 
+(ran in 41.7s)
+At line:1 char:1
++ flutter analyze 
+--no-fatal-infos 
+--no-fatal-warnings 2>&1 | 
+Out-File  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          :  
+   NotSpecified: (13 issues f  
+  ound. (ran in 41.7s):Strin   
+ g) [], RemoteException
+    + FullyQualifiedErrorId :  
+   NativeCommandError
+ 

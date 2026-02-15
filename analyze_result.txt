@@ -1,0 +1,21 @@
+﻿Analyzing Online-graveyard...                                   
+
+   info - Dangling library doc comment - lib\core\constants\app_constants.dart:1:1 - dangling_library_doc_comments
+   info - Dangling library doc comment - lib\core\errors\exceptions.dart:1:1 - dangling_library_doc_comments
+   info - The type parameter name 'Type' matches a visible type name - lib\core\usecases\usecase.dart:18:24 - avoid_types_as_parameter_names
+   info - Dangling library doc comment - lib\core\utils\app_utils.dart:1:1 - dangling_library_doc_comments
+
+flutter : 4 issues found. (ran 
+in 4.3s)
+At line:1 char:1
++ flutter analyze 2>&1 | 
+Out-File -FilePath 
+D:\Office\Online-graveyard\ ...
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          :  
+   NotSpecified: (4 issues fo  
+  und. (ran in 4.3s):String)   
+  [], RemoteException
+    + FullyQualifiedErrorId :  
+   NativeCommandError
+ 

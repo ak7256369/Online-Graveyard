@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Online Graveyard - Home V1</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#195de6",
+                        "background-light": "#f6f8fb", // Slightly blue-tinted off-white for sky-blue feel
+                        "background-dark": "#111621",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a2130",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem", 
+                        "lg": "1.5rem", 
+                        "xl": "2rem", 
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        "soft": "0 10px 40px -10px rgba(25, 93, 230, 0.08)",
+                        "card": "0 4px 20px -2px rgba(25, 93, 230, 0.05)"
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar hiding for clean look */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        /* Masonry effect for Tailwind */
+        .masonry-grid {
+            column-count: 2;
+            column-gap: 1rem;
+        }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1rem;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 font-display antialiased min-h-screen relative pb-24">
+<!-- Status Bar Area Placeholder (iOS Safe Area) -->
+<div class="h-12 w-full bg-transparent"></div>
+<!-- Header Section -->
+<header class="px-6 pt-2 pb-4 sticky top-0 z-40 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="flex items-center justify-between mb-6">
+<h1 class="text-3xl font-medium tracking-tight text-slate-900 dark:text-white">
+                The Online<br/>Graveyard
+            </h1>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors text-slate-600 dark:text-slate-300">
+<span class="material-icons-round text-2xl">search</span>
+</button>
+<div class="h-10 w-10 rounded-full overflow-hidden border border-slate-200 dark:border-slate-700">
+<img alt="User Profile" class="h-full w-full object-cover" data-alt="Portrait of a woman smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-0enIlQgWqn50esCBQGCZ39QEXyM8wthaXtFLVlSQQCP1MjI6_YpxJAvSVT99CzK47tXns95iUkLRtbt4ol4myeIhPdE2oCOO8pBda17pA5xjjL6W0D947ZsZLSGxKXgIKWL2ZIn4fY5i4Lc-ItQrIBmZWC19KiMr2Je87egpbx9ata6TFzGPxh_SdLl-r9S64hnNRfbA7N4BfZ3lNe3sreKmGmKDV6w04ATi7O9k89SA95Eq06H_daerQa84b2ZZRu5tffJ2pQ"/>
+</div>
+</div>
+</div>
+<!-- Filter Chips -->
+<div class="flex gap-3 overflow-x-auto no-scrollbar pb-2">
+<button class="px-5 py-2 rounded-full bg-primary text-white text-lg whitespace-nowrap shadow-soft">
+                All Memories
+            </button>
+<button class="px-5 py-2 rounded-full bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 text-lg whitespace-nowrap hover:border-primary/50 transition-colors">
+                Family
+            </button>
+<button class="px-5 py-2 rounded-full bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 text-lg whitespace-nowrap hover:border-primary/50 transition-colors">
+                Friends
+            </button>
+<button class="px-5 py-2 rounded-full bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 text-lg whitespace-nowrap hover:border-primary/50 transition-colors">
+                Colleagues
+            </button>
+</div>
+</header>
+<!-- Main Content: Masonry Grid -->
+<main class="px-4 mt-2">
+<div class="masonry-grid">
+<!-- Card 1: Tall Portrait -->
+<div class="masonry-item relative group">
+<div class="bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-card hover:shadow-soft transition-shadow duration-300 border border-slate-100 dark:border-slate-800">
+<div class="relative h-64 overflow-hidden">
+<img alt="Portrait of a man" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Portrait of a young man looking stoic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7C2G285I2f41epYNh99xgRfujxg-0ipnxQm4vxpgSMibSAyvKE5qQRPZCRIt5UwjfjuyLU1OFQ8yT7_v8xJPAn-DVqQ8Hqe_yMAelZ7dfs2jKH1GTe6SB6phfzBU5A5NQMoL_mwN08B3a4-3rQZ-guxg9R0GiIe9yg5UI2qPR8mDgr9Y21dL3y-gk27GAyyW36ItCjlWSUuOEUURBKn9S60StBwGakuy_E1VC-FXNiM4oNHthFFzVNeKfmUkX8S5IFx52kbNDwg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
+<button class="absolute top-3 right-3 bg-white/20 backdrop-blur-sm p-1.5 rounded-full text-white hover:bg-white/40 transition">
+<span class="material-icons-round text-sm">favorite_border</span>
+</button>
+</div>
+<div class="p-4">
+<h3 class="text-xl font-semibold text-slate-900 dark:text-white leading-tight mb-1">James "Jim" Halpert</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-3 italic">1978 – 2023</p>
+<div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-800">
+<div class="flex items-center text-primary text-sm gap-1">
+<span class="material-icons-round text-base">local_fire_department</span>
+<span>142</span>
+</div>
+<div class="flex items-center text-slate-400 dark:text-slate-500 text-sm gap-1">
+<span class="material-icons-round text-base">filter_vintage</span>
+<span>24</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2: Short/Square -->
+<div class="masonry-item relative group">
+<div class="bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-card hover:shadow-soft transition-shadow duration-300 border border-slate-100 dark:border-slate-800">
+<div class="relative h-48 overflow-hidden">
+<img alt="Portrait of a woman" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Portrait of a woman looking serious" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOTJDmngzqf9xttU8o1lWXuiaO016YbO01MuyqPxwJNzyDyhjMgSdfj4rsmGXNHC056oYAunqGN1kn5pzbrN3P0ZdjEAHyfOQLvTgyb30slOnlf0H1QRc4Coy1rGP5e3FT8tBZ3BTXdWROVxCE4kKMczvJty1q2aXaAoqGNyJnaiQ5qIZS51i0ivBqRMfpSTEi4-rwrASKn8XinAsWw7r93fWbE2T3J50Od1tjSqL-y5aYRXYOP7dBSOon3LnefogqkvnOKJNK7g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
+</div>
+<div class="p-4">
+<h3 class="text-xl font-semibold text-slate-900 dark:text-white leading-tight mb-1">Eleanor Rigby</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-3 italic">1945 – 2022</p>
+<div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-800">
+<div class="flex items-center text-primary text-sm gap-1">
+<span class="material-icons-round text-base">local_fire_department</span>
+<span>89</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3: Medium Height -->
+<div class="masonry-item relative group">
+<div class="bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-card hover:shadow-soft transition-shadow duration-300 border border-slate-100 dark:border-slate-800">
+<div class="relative h-56 overflow-hidden">
+<img alt="Vintage photo of man" class="w-full h-full object-cover sepia-[.5] transition-transform duration-700 group-hover:scale-105" data-alt="Vintage style portrait of an older man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9yxfD1K1216C8hXqFkepLFGMFH3fMoWHXjjh5fgtHb4YFGOvWbKgitn2FemzyRGeL23bfNjI-2tvtoZpw_qJZEVmYTc0mKL2kV2mG-qV_KuBrG_TwRznWmztLakWxmrRlCIuK_n-PhzD95is4LnnLs-WATloUbtxQQi1Xk9Vdaw2x2Bsldgu9NP07A1CpRx_jQLOHTtzHi1cXpOe7iX8b_wqtwhpz8xy5lPfqrgfybrgm76f2LqBqe7wNjwmzmEEM3FQ238La-A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
+</div>
+<div class="p-4">
+<h3 class="text-xl font-semibold text-slate-900 dark:text-white leading-tight mb-1">Arthur Dent</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-3 italic">1950 – 2021</p>
+<div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-800">
+<div class="flex items-center text-primary text-sm gap-1">
+<span class="material-icons-round text-base">local_fire_department</span>
+<span>12</span>
+</div>
+<div class="flex items-center text-slate-400 dark:text-slate-500 text-sm gap-1">
+<span class="material-icons-round text-base">filter_vintage</span>
+<span>4</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 4: Black and White -->
+<div class="masonry-item relative group">
+<div class="bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-card hover:shadow-soft transition-shadow duration-300 border border-slate-100 dark:border-slate-800">
+<div class="relative h-60 overflow-hidden">
+<img alt="Portrait" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Black and white portrait of a man smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaQCss82i2kkLqyKhLFdGtaEb9d81v9X7Nxl0qZybXJlwUQKY7MrMS0se-RlFfsyjUiZJ8FY11vAMmJZPbrN3v7vZOfmdhXQj5bTJHJz1Nu-HolQofwx5TbU2mnDcHEAynewLb0dNiKPv4U_NQ54in5U7dvkABneo4dXdWLP9Vxykivz-eiu1Z8--Ft3piiTLIn2mm2oAVOaJ6904oLDZvhpwI_sHSaV12XXL4cFp_YKUlvalbb19mk7YxCq14W8AMRmXdZOQfLw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
+</div>
+<div class="p-4">
+<h3 class="text-xl font-semibold text-slate-900 dark:text-white leading-tight mb-1">Marcus Aurelius</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-3 italic">1960 – 2023</p>
+<p class="text-slate-600 dark:text-slate-300 text-sm line-clamp-2 leading-relaxed mb-3">"Waste no more time arguing about what a good man should be. Be one."</p>
+<div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-800">
+<div class="flex items-center text-primary text-sm gap-1">
+<span class="material-icons-round text-base">local_fire_department</span>
+<span>342</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 5: Soft Colors -->
+<div class="masonry-item relative group">
+<div class="bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-card hover:shadow-soft transition-shadow duration-300 border border-slate-100 dark:border-slate-800">
+<div class="relative h-40 overflow-hidden">
+<img alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up portrait of a woman looking away" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJjdrBfjxzywGf_mSaK5FUENlRqLG7ZqTbXRyBTUtcXsZNXthkF_CuP20AvTTZOQLeelfGDNvkBbELKeYj_SnVgfb7ZHl26DdQ66qJLZC1nAAKgCuMi4_RGCYXtspEHFDn9NPYVYVOqrnQSJSFjFkEZ82lR5qJXBtyiCUUiDmWaAZK_EJohqWUkutIT7a6yOvGbHngOp70AGc-ZIpwnW4aUUelitE95aD-SkhOlV3T8mQN7_WNTMTzKusQkoc47RpVpaXmDH-X2w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
+</div>
+<div class="p-4">
+<h3 class="text-xl font-semibold text-slate-900 dark:text-white leading-tight mb-1">Sarah Connor</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-3 italic">1965 – 2024</p>
+<div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-800">
+<div class="flex items-center text-primary text-sm gap-1">
+<span class="material-icons-round text-base">local_fire_department</span>
+<span>15</span>
+</div>
+<div class="flex items-center text-slate-400 dark:text-slate-500 text-sm gap-1">
+<span class="material-icons-round text-base">filter_vintage</span>
+<span>10</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 6: Landscape crop -->
+<div class="masonry-item relative group">
+<div class="bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-card hover:shadow-soft transition-shadow duration-300 border border-slate-100 dark:border-slate-800">
+<div class="relative h-32 overflow-hidden">
+<img alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Portrait of a young man with glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd_BHdDVmDI9d7CX3Xjxh92aVN-w38Oq7DnMVRi9YOL_Qfevosk7UIXgv8SKlxjrHxQ7knxl4s8Gdcf9EQikKKJwKqw3qwk8hLcRWmbRiIGNwxJJQ41qNhi6-u7QMOZGeTGcturZlZN9bAYgY23GIONQD4-9cYURF5XiTWhb5SWgA5CHns74UwV5Zglz3DEvXNcJepX0FIMo8mu7ond5kiWKNxqV1mMKBIDAh2qyEs7RmeJ7ehFa31oYtBraqlrN0upd0A2Dr5pw"/>
+</div>
+<div class="p-4">
+<h3 class="text-xl font-semibold text-slate-900 dark:text-white leading-tight mb-1">Peter Parker</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-3 italic">2001 – 2024</p>
+<div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-800">
+<div class="flex items-center text-primary text-sm gap-1">
+<span class="material-icons-round text-base">local_fire_department</span>
+<span>999+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Floating Action Button -->
+<div class="fixed bottom-8 right-6 z-50">
+<button class="h-16 w-16 bg-primary hover:bg-blue-600 rounded-full shadow-lg shadow-blue-500/30 flex items-center justify-center text-white transition-all transform hover:scale-105 active:scale-95 group">
+<span class="material-icons-round text-3xl group-hover:rotate-90 transition-transform duration-300">add</span>
+</button>
+</div>
+<!-- Bottom Navigation Bar (iOS Style) -->
+<nav class="fixed bottom-0 w-full bg-surface-light/90 dark:bg-surface-dark/90 backdrop-blur-xl border-t border-slate-200 dark:border-slate-800 pb-5 pt-3 px-6 z-40">
+<div class="flex justify-between items-center max-w-sm mx-auto">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-icons-round text-2xl">home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 transition-colors" href="#">
+<span class="material-icons-round text-2xl">grid_view</span>
+</a>
+<div class="w-12"></div> <!-- Spacer for FAB -->
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 transition-colors" href="#">
+<span class="material-icons-round text-2xl">notifications</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 transition-colors" href="#">
+<span class="material-icons-round text-2xl">settings</span>
+</a>
+</div>
+</nav>
+<!-- iOS Home Indicator -->
+<div class="fixed bottom-1 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-slate-900/20 dark:bg-white/20 rounded-full z-50"></div>
+</body></html>
